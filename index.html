@@ -78,113 +78,174 @@
 
 <header>
   <h1>Privacy Policy for SpiritAmmo</h1>
-  <p class="updated">Last updated: 30 August 2026</p>
+  <p class="updated">Last updated: 12 November 2026</p>
 </header>
 
 <h2>Introduction</h2>
-<p>SpiritAmmo (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the app&rdquo;) helps you memorise scripture by reciting it aloud. This policy explains what the app collects, what leaves your device, and who else processes it.</p>
-<p>We have tried to be specific rather than reassuring. Some of your data does leave your device, and this policy says exactly when and to whom.</p>
-
+<p>SpiritAmmo (&quot;we&quot;, &quot;our&quot;, or &quot;the app&quot;) helps you memorise scripture by reciting
+it aloud. This policy explains what the app collects, what leaves your device,
+and who else processes it.</p>
+<p>We have tried to be specific rather than reassuring. Some of your data does
+leave your device, and this policy says exactly when and to whom.</p>
 <h2>Summary</h2>
 <div class="callout">
 <ul>
-  <li>Your practice history, verse library, imported books and audio recordings are stored <strong>on your device</strong>.</li>
-  <li><strong>Speech you dictate is transcribed on your device where your platform supports it</strong>, and otherwise sent to your phone&rsquo;s speech recognition service (Google on Android, Apple on iOS).</li>
-  <li>If you <strong>create an account</strong>, your profile and progress sync to our servers so that squads and leaderboards work.</li>
-  <li>If you <strong>do not sign in</strong>, the app works offline and nothing syncs.</li>
-  <li>We do not sell your data, show advertising, or use advertising trackers.</li>
+<li>Your practice history, verse library, imported books and audio recordings are
+stored <strong>on your device</strong>.</li>
+<li><strong>Speech you dictate is transcribed on your device where your platform
+supports it</strong>, and otherwise sent to your phone&#39;s speech recognition service
+(Google on Android, Apple on iOS).</li>
+<li>If you <strong>sign in to use Squads</strong>, a small profile (the name you chose in the
+app, your rank, streak and verse counts) and a record of your memory work sync
+to our servers so your squad can see them.</li>
+<li>If you <strong>do not sign in</strong>, the app works offline and nothing syncs.</li>
+<li>We do not sell your data, show advertising, or use advertising trackers.</li>
 </ul>
 </div>
-
 <h2>Data stored on your device</h2>
-<p>Held in a local database and local files, never uploaded unless a section below says otherwise:</p>
+<p>Held in a local database and local files, never uploaded unless a section below
+says otherwise:</p>
 <ul>
-  <li>Verses, collections, and any PDF, EPUB or text file you import</li>
-  <li>Practice history: accuracy scores, timestamps, durations, and the text transcription of what you recited</li>
-  <li>Spaced-repetition scheduling state and any mnemonics you save</li>
-  <li>Audio recordings you make while practising</li>
-  <li>App settings, including theme and voice preferences</li>
+<li>Verses, collections, and any PDF, EPUB or text file you import</li>
+<li>Practice history: accuracy scores, timestamps, durations, and the text
+transcription of what you recited</li>
+<li>Spaced-repetition scheduling state and any mnemonics you save</li>
+<li>Audio recordings you make while practising</li>
+<li>App settings, including theme and voice preferences</li>
 </ul>
-<p>You can delete all of it by clearing the app&rsquo;s storage or uninstalling the app.</p>
-
+<p>You can delete all of it by clearing the app&#39;s storage or uninstalling the app.</p>
 <h2>Data that leaves your device</h2>
-
 <h3>1. Speech recognition — audio and speech</h3>
-<p>When you recite a verse, the app uses your device&rsquo;s built-in speech recognition to turn speech into text.</p>
-<p><strong>The app asks for on-device recognition whenever your device supports it</strong>, so that your speech is transcribed locally and never sent anywhere. Support depends on your platform, language, and whether the offline language pack is installed.</p>
-<p>Where on-device recognition is unavailable, the app falls back to your platform&rsquo;s speech service — <strong>Google&rsquo;s</strong> on Android, <strong>Apple&rsquo;s</strong> on iOS — and your speech is sent to them for transcription. That processing is governed by Google&rsquo;s and Apple&rsquo;s own privacy policies, not ours. We receive only the resulting text.</p>
+<p>When you recite a verse, the app uses your device&#39;s built-in speech recognition
+to turn speech into text.</p>
+<p><strong>The app asks for on-device recognition whenever your device supports it</strong>, so
+that your speech is transcribed locally and never sent anywhere. Support depends
+on your platform, language, and whether the offline language pack is installed.</p>
+<p>Where on-device recognition is unavailable, the app falls back to your platform&#39;s
+speech service — <strong>Google&#39;s</strong> on Android, <strong>Apple&#39;s</strong> on iOS — and your speech is
+sent to them for transcription. That processing is governed by Google&#39;s and
+Apple&#39;s own privacy policies, not ours. We receive only the resulting text.</p>
 <p>We do not upload your audio recordings in either case.</p>
-<p>The app also supports on-device transcription via a downloaded Whisper model. When that path is used, audio is processed entirely on your device; downloading the model contacts <code>huggingface.co</code> to fetch the model file.</p>
-<p><strong>Permission used:</strong> <code>RECORD_AUDIO</code> (Android) / <code>NSMicrophoneUsageDescription</code> (iOS).</p>
-
+<p>The app also supports on-device transcription via a downloaded Whisper model.
+When that path is used, audio is processed entirely on your device; downloading
+the model contacts <code>huggingface.co</code> to fetch the model file.</p>
+<p><strong>Permission used:</strong> <code>RECORD_AUDIO</code> (Android) / <code>NSMicrophoneUsageDescription</code>
+(iOS).</p>
 <h3>2. Account and profile — only if you sign in</h3>
-<p>Signing in is optional. If you do, we use <strong>Clerk</strong> for authentication, which processes your email address and sign-in credentials.</p>
+<p>Signing in is optional and is only needed for Squads. You sign in with Google
+or Apple through <strong>Clerk</strong>, our authentication provider, which receives the
+name, email address and profile picture that Google or Apple shares and keeps
+your sign-in session.</p>
 <p>Once signed in, the following syncs to our backend (<strong>Convex</strong>):</p>
 <ul>
-  <li>Display name, avatar selection, and account identifier</li>
-  <li>Rank, valor points, streak, total verses practised, and average accuracy</li>
-  <li>Last-active timestamp and online presence</li>
-  <li>Squad membership, squad challenges, shared operations, and leaderboard standing</li>
-  <li>Mnemonics you explicitly choose to share with your squad</li>
-  <li>Practice session summaries</li>
+<li>An account identifier from Clerk</li>
+<li>Your profile: the soldier name you set in the app (not your Google or Apple
+name), rank, current and best streak, and how many verses you have recited
+and mastered</li>
+<li>Whether you are online or training, and when you were last seen</li>
+<li>Memory events: each time you first recite, pass a review of, or master a
+verse, the verse reference and the time. Not what you said and not your
+recording</li>
+<li>The squads you create or join, and your part in their challenges,
+skirmishes (your accuracy on each verse), raids and field exercises</li>
 </ul>
-<p>This is what makes squads, challenges and leaderboards work. Other members of a squad you join can see your display name, avatar, rank and progress.</p>
-
+<p>This is what makes squads work. Members of a squad you join see your soldier
+name, rank, streak, verse counts, whether you are online, and your scores in
+the squad&#39;s activities. Another squad in a field exercise with yours sees only
+your squad&#39;s name and its average score.</p>
 <h3>3. Verse text sent for AI features</h3>
-<p>When you request a briefing or a generated mnemonic, the relevant verse text is sent to our backend, which forwards it to <strong>Google Gemini</strong>. Requests are rate limited per account. We do not send your recordings, your personal details, or your practice history with these requests.</p>
-
+<p>When you request a briefing or a generated mnemonic, the relevant verse text is
+sent to our backend, which forwards it to <strong>Google Gemini</strong>. Requests are rate
+limited per account. We do not send your recordings, your personal details, or
+your practice history with these requests.</p>
 <h3>4. Verse text sent for spoken playback</h3>
-<p>When you use a premium voice to hear a verse read aloud, the verse text is sent to our backend, which forwards it to <strong>ElevenLabs</strong> to synthesise audio. The resulting audio file is cached on our servers so the same verse does not need regenerating. Your device&rsquo;s built-in voice is also available and sends nothing.</p>
-
-<h3>5. Scripture lookups</h3>
-<p>Fetching verses you have not already stored contacts a third-party Bible text API. These requests contain the scripture reference, not anything about you.</p>
-
+<p>When you use a premium voice to hear a verse read aloud, the verse text is sent
+to our backend, which forwards it to <strong>ElevenLabs</strong> to synthesise audio. The
+resulting audio file is cached on our servers so the same verse does not need
+regenerating. Your device&#39;s built-in voice is also available and sends nothing.</p>
+<h3>5. Scripture lookups and content downloads</h3>
+<p>Fetching verses you have not already stored contacts a third-party Bible text
+API. These requests contain the scripture reference, not anything about you.</p>
+<p>Verse packs you add by code, and a small settings file the app checks at
+launch, are downloaded from our content storage on <strong>Cloudflare</strong>. These
+requests carry nothing about you beyond what any web request does (such as
+your IP address).</p>
 <h2>Analytics</h2>
-<p>The app contains an analytics layer that is <strong>off until you consent</strong>. Nothing is recorded before you grant consent, and withdrawing consent stops collection and drops the associated identifier.</p>
-<p>In the current build no analytics provider is configured, so events are written to a local log and never transmitted.</p>
-<p>If a build ships with <strong>Amplitude</strong> enabled, it would collect usage events — screens viewed, drills started and completed, accuracy outcomes — tied to a session identifier. Session replay is available in that SDK but is disabled by default and is gated behind the same consent.</p>
-
+<p>The app asks once whether you are happy to share usage statistics. Analytics is
+<strong>off until you agree</strong>: nothing is recorded before you do, and withdrawing
+consent in Settings stops collection and drops the associated identifier.</p>
+<p>If you agree, usage events are sent to <strong>Amplitude</strong>: screens viewed, drills
+started and completed, and accuracy outcomes, tied to a random device
+identifier rather than your name or email. Session replay is turned off.</p>
 <h2>Crash reporting</h2>
-<p>Errors are captured locally to help the app recover and show you a useful message. No external crash-reporting service is configured, so crash data does not leave your device.</p>
-
+<p>Errors are captured locally to help the app recover and show you a useful
+message. No external crash-reporting service is configured, so crash data does
+not leave your device.</p>
 <h2>Notifications</h2>
-<p>With your permission, the app schedules local practice reminders on your device (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>). These are generated on your device. We do not operate a push server and do not send you remote messages.</p>
-
+<p>With your permission, the app schedules local practice reminders on your device
+(<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>). These are generated on your
+device. We do not operate a push server and do not send you remote messages.</p>
 <h2>Permissions we request</h2>
-<div class="table-scroll">
 <table>
-  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
-  <tbody>
-    <tr><td>Microphone (<code>RECORD_AUDIO</code>)</td><td>To hear you recite a verse and score your accuracy</td></tr>
-    <tr><td>Notifications (<code>POST_NOTIFICATIONS</code>)</td><td>To remind you to practise</td></tr>
-    <tr><td>Exact alarms (<code>SCHEDULE_EXACT_ALARM</code>)</td><td>To deliver reminders at the time you chose</td></tr>
-  </tbody>
-</table>
-</div>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Microphone (<code>RECORD_AUDIO</code>)</td>
+<td>To hear you recite a verse and score your accuracy</td>
+</tr>
+<tr>
+<td>Notifications (<code>POST_NOTIFICATIONS</code>)</td>
+<td>To remind you to practise</td>
+</tr>
+<tr>
+<td>Exact alarms (<code>SCHEDULE_EXACT_ALARM</code>)</td>
+<td>To deliver reminders at the time you chose</td>
+</tr>
+<tr>
+<td>Phone state (<code>READ_PHONE_STATE</code>)</td>
+<td>Used only by the practice recorder, to pause a recording when a call comes in. The app does not read your number, contacts or call log</td>
+</tr>
+<tr>
+<td>Foreground services (microphone, media playback)</td>
+<td>To keep a recording going, and verses playing, while the screen is locked</td>
+</tr>
+</tbody></table>
 <p>The app does not request camera, contacts, location, or storage permissions.</p>
-
 <h2>Data retention and deletion</h2>
 <ul>
-  <li><strong>On-device data</strong>: removed when you clear app storage or uninstall.</li>
-  <li><strong>Account data</strong>: deleted when you delete your account. Contact us at the address below and we will remove your profile, squad membership and synced progress.</li>
-  <li><strong>Cached synthesised audio</strong>: keyed to verse text rather than to you, and contains no personal information.</li>
+<li><strong>On-device data</strong>: removed when you clear app storage or uninstall.</li>
+<li><strong>Account data</strong>: kept while you have an account. Delete it yourself in the
+app under <strong>Settings → Privacy &amp; data → Delete my account</strong>, which removes
+your profile, memory events and squad memberships from our servers, your
+Clerk sign-in, and the data on your device. If you no longer have the app,
+follow <a href="https://danteata.github.io/spiritammo-legal/delete-account/">https://danteata.github.io/spiritammo-legal/delete-account/</a> and we
+will delete it for you within 30 days.</li>
+<li><strong>Cached synthesised audio</strong>: keyed to verse text rather than to you, and
+contains no personal information.</li>
 </ul>
-
-<h2>Children&rsquo;s privacy</h2>
-<p>The app is suitable for all ages and does not target children. If an account is created, it is subject to the age requirements of our authentication provider. Because signing in is optional, the app can be used without providing any personal information at all.</p>
-
+<h2>Children&#39;s privacy</h2>
+<p>The app is suitable for all ages and does not target children. If an account is
+created, it is subject to the age requirements of our authentication provider.
+Because signing in is optional, the app can be used without providing any
+personal information at all.</p>
 <h2>Your rights</h2>
-<p>Depending on where you live, you may have the right to access, correct, export or delete your personal data, and to withdraw consent for analytics. Analytics consent can be withdrawn in the app at any time. For anything else, write to us at the address below.</p>
-
+<p>Depending on where you live, you may have the right to access, correct, export or
+delete your personal data, and to withdraw consent for analytics. Analytics
+consent can be withdrawn in the app at any time. For anything else, write to us
+at the address below.</p>
 <h2>Changes to this policy</h2>
-<p>We will update this page when the app&rsquo;s data handling changes, and revise the &ldquo;Last updated&rdquo; date above.</p>
-
+<p>We will update this page when the app&#39;s data handling changes, and revise the
+&quot;Last updated&quot; date above.</p>
 <h2>Contact</h2>
-<p><strong>Email</strong>: <a href="mailto:dan.abakah@gmail.com">dan.abakah@gmail.com</a><br>
+<p><strong>Email</strong>: <a href="mailto:dan.abakah@gmail.com">dan.abakah@gmail.com</a>
 <strong>App</strong>: SpiritAmmo</p>
 
 <footer>
-  <p>SpiritAmmo — scripture memorisation. This page is the privacy policy referenced by the app&rsquo;s Google Play listing.</p>
+  <p>SpiritAmmo — scripture memorisation. This page is the privacy policy referenced by the app&rsquo;s Google Play listing. To delete your account, see <a href="delete-account/">Delete your account</a>.</p>
 </footer>
 
 </div>

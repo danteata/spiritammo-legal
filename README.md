@@ -7,6 +7,7 @@ The app's own source repository is private, so these live here instead.
 | Document | URL |
 |---|---|
 | Privacy Policy | https://danteata.github.io/spiritammo-legal/ |
+| Delete your account | https://danteata.github.io/spiritammo-legal/delete-account/ |
 
 ## Editing
 
