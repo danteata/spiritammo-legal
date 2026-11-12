@@ -206,15 +206,11 @@ device. We do not operate a push server and do not send you remote messages.</p>
 <td>To deliver reminders at the time you chose</td>
 </tr>
 <tr>
-<td>Phone state (<code>READ_PHONE_STATE</code>)</td>
-<td>Used only by the practice recorder, to pause a recording when a call comes in. The app does not read your number, contacts or call log</td>
-</tr>
-<tr>
-<td>Foreground services (microphone, media playback)</td>
-<td>To keep a recording going, and verses playing, while the screen is locked</td>
+<td>Foreground service (media playback)</td>
+<td>To keep verses playing in Listen while the screen is locked</td>
 </tr>
 </tbody></table>
-<p>The app does not request camera, contacts, location, or storage permissions.</p>
+<p>The app does not request camera, contacts, phone, location, or storage permissions, and it only listens to the microphone while you are reciting with the app open.</p>
 <h2>Data retention and deletion</h2>
 <ul>
 <li><strong>On-device data</strong>: removed when you clear app storage or uninstall.</li>
