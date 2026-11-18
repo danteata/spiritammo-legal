@@ -78,7 +78,7 @@
 
 <header>
   <h1>Privacy Policy for SpiritAmmo</h1>
-  <p class="updated">Last updated: 12 November 2026</p>
+  <p class="updated">Last updated: 18 November 2026</p>
 </header>
 
 <h2>Introduction</h2>
@@ -96,8 +96,11 @@ stored <strong>on your device</strong>.</li>
 supports it</strong>, and otherwise sent to your phone&#39;s speech recognition service
 (Google on Android, Apple on iOS).</li>
 <li>If you <strong>sign in to use Squads</strong>, a small profile (the name you chose in the
-app, your rank, streak and verse counts) and a record of your memory work sync
-to our servers so your squad can see them.</li>
+app, your rank, streak, verse counts and how your soldier is dressed) and a
+record of your memory work sync to our servers so your squad can see them.</li>
+<li>Season operations (such as Operation Nativity) work without signing in. If you
+are signed in, your recitals of their verses also add to a <strong>shared total that
+counts verses and soldiers, with no names</strong>.</li>
 <li>If you <strong>do not sign in</strong>, the app works offline and nothing syncs.</li>
 <li>We do not sell your data, show advertising, or use advertising trackers.</li>
 </ul>
@@ -132,7 +135,8 @@ the model contacts <code>huggingface.co</code> to fetch the model file.</p>
 <p><strong>Permission used:</strong> <code>RECORD_AUDIO</code> (Android) / <code>NSMicrophoneUsageDescription</code>
 (iOS).</p>
 <h3>2. Account and profile — only if you sign in</h3>
-<p>Signing in is optional and is only needed for Squads. You sign in with Google
+<p>Signing in is optional. It is needed for Squads, and lets your recitals count
+toward a season operation&#39;s shared total. You sign in with Google
 or Apple through <strong>Clerk</strong>, our authentication provider, which receives the
 name, email address and profile picture that Google or Apple shares and keeps
 your sign-in session.</p>
@@ -142,17 +146,25 @@ your sign-in session.</p>
 <li>Your profile: the soldier name you set in the app (not your Google or Apple
 name), rank, current and best streak, and how many verses you have recited
 and mastered</li>
+<li>Your soldier as worn: the gear equipped in each slot, its forge level and
+tarnish, and up to three of your medals</li>
 <li>Whether you are online or training, and when you were last seen</li>
 <li>Memory events: each time you first recite, pass a review of, or master a
 verse, the verse reference and the time. Not what you said and not your
 recording</li>
+<li>Season operations: when a first recital is of a verse in a season operation
+while it runs, it adds one to that operation&#39;s shared total, and we record
+that your account has taken part so you are counted once as a soldier</li>
 <li>The squads you create or join, and your part in their challenges,
 skirmishes (your accuracy on each verse), raids and field exercises</li>
 </ul>
 <p>This is what makes squads work. Members of a squad you join see your soldier
 name, rank, streak, verse counts, whether you are online, and your scores in
-the squad&#39;s activities. Another squad in a field exercise with yours sees only
-your squad&#39;s name and its average score.</p>
+the squad&#39;s activities, and your soldier as worn with its medals. Another squad in
+a field exercise with yours sees only your squad&#39;s name and its average score.</p>
+<p>Everyone using the app can see a season operation&#39;s shared total: how many of
+its verses have been recited and by how many soldiers. It contains no names
+and nothing that identifies you.</p>
 <h3>3. Verse text sent for AI features</h3>
 <p>When you request a briefing or a generated mnemonic, the relevant verse text is
 sent to our backend, which forwards it to <strong>Google Gemini</strong>. Requests are rate
@@ -170,12 +182,18 @@ API. These requests contain the scripture reference, not anything about you.</p>
 launch, are downloaded from our content storage on <strong>Cloudflare</strong>. These
 requests carry nothing about you beyond what any web request does (such as
 your IP address).</p>
+<h2>Sharing</h2>
+<p>When you tap <strong>Share</strong> on a mission card, a verse card, a promotion or a season
+medal, the app makes the image or text on your device and hands it to your
+phone&#39;s share sheet. It goes only to the app and people you choose; it is not
+sent to us.</p>
 <h2>Analytics</h2>
 <p>The app asks once whether you are happy to share usage statistics. Analytics is
 <strong>off until you agree</strong>: nothing is recorded before you do, and withdrawing
 consent in Settings stops collection and drops the associated identifier.</p>
 <p>If you agree, usage events are sent to <strong>Amplitude</strong>: screens viewed, drills
-started and completed, and accuracy outcomes, tied to a random device
+started and completed, accuracy outcomes, and features used (such as joining a
+season operation or sharing a card), tied to a random device
 identifier rather than your name or email. Session replay is turned off.</p>
 <h2>Crash reporting</h2>
 <p>Errors are captured locally to help the app recover and show you a useful
@@ -216,10 +234,13 @@ device. We do not operate a push server and do not send you remote messages.</p>
 <li><strong>On-device data</strong>: removed when you clear app storage or uninstall.</li>
 <li><strong>Account data</strong>: kept while you have an account. Delete it yourself in the
 app under <strong>Settings → Privacy &amp; data → Delete my account</strong>, which removes
-your profile, memory events and squad memberships from our servers, your
+your profile, memory events, squad memberships and record of taking part in
+season operations from our servers, your
 Clerk sign-in, and the data on your device. If you no longer have the app,
 follow <a href="https://danteata.github.io/spiritammo-legal/delete-account/">https://danteata.github.io/spiritammo-legal/delete-account/</a> and we
 will delete it for you within 30 days.</li>
+<li><strong>Season totals</strong>: counts with no names attached. Deleting your account
+removes the record that you took part, but not the verses already counted.</li>
 <li><strong>Cached synthesised audio</strong>: keyed to verse text rather than to you, and
 contains no personal information.</li>
 </ul>
